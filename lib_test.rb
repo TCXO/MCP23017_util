@@ -9,25 +9,40 @@ ADDRESS = 0x20
 pullup_count = 0
 1000.times do |item|
     @keyboard.get_all_input
-    # puts 'wow!' if @keyboard.GPIOAB_tf.include?(true)
 
     case true
     when @keyboard.GPIOAB_tf[0]
-        puts 'aa'
+        puts 'GPA0'
     when @keyboard.GPIOAB_tf[1]
-        puts 'bb'
+        puts 'GPA1'
     when @keyboard.GPIOAB_tf[2]
-        puts 'cc'
+        puts 'GPA2'
     when @keyboard.GPIOAB_tf[3]
-        puts 'dd'
+        puts 'GPA3'
     when @keyboard.GPIOAB_tf[4]
-        puts 'ee'
+        puts 'GPA4'
     when @keyboard.GPIOAB_tf[5]
-        puts 'ff'
+        puts 'GPA5'
     when @keyboard.GPIOAB_tf[6]
-        puts 'gg'
+        puts 'GPA6'
     when @keyboard.GPIOAB_tf[7]
-        puts 'bb'
+        puts 'GPA7'
+    when @keyboard.GPIOAB_tf[8]
+        puts 'GPB0'
+    when @keyboard.GPIOAB_tf[9]
+        puts 'GPB1'
+    when @keyboard.GPIOAB_tf[10]
+        puts 'GPB2'
+    when @keyboard.GPIOAB_tf[11]
+        puts 'GPB3'
+    when @keyboard.GPIOAB_tf[12]
+        puts 'GPB4'
+    when @keyboard.GPIOAB_tf[13]
+        puts 'GPB5'
+    when @keyboard.GPIOAB_tf[14]
+        puts 'GPB6'
+    when @keyboard.GPIOAB_tf[15]
+        puts 'GPB7'
     else
         pullup_count = pullup_count + 1
         
